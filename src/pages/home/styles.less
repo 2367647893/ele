@@ -1,0 +1,26 @@
+.box {
+  height: 500px;
+  box-sizing: border-box;
+  overflow: auto;
+  border: 2px #f00 solid;
+  .pages-hoc {
+    margin: 0 auto;
+  }
+  .d {
+    margin: 0 20px 20px 0;
+    img {
+      width: 200px;
+      height: 400px;
+    }
+    p:nth-child(2n + 1) {
+      height: 300px;
+      width: 200px;
+      border: 1px #f00 solid;
+    }
+    p:nth-child(2n) {
+      border: 1px #00f solid;
+      height: 200px;
+      width: 200px;
+    }
+  }
+}

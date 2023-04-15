@@ -1,0 +1,12 @@
+{
+  "dependencies": {
+    "module-alias": "^2.2.2"
+  },
+  "scripts": {
+    "dev": "nodemon --inspect index && cross-env NODE_ENV=development",
+    "start": "set NODE_ENV=development&& node index.js"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.3"
+  }
+}

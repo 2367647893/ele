@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+<meta name="description" content="Web site created using create-react-app" />
+<title>React App</title>
+</head>
+
+<body>
+<div id="root"></div>
+<script>
+
+
+
+
+
+
+
+// 16.4 
+
+// var x0 = x1 = 0
+// var a = { n: 1 }
+// var b = a
+// a.x = a = { n: 2 }
+// console.log(a.x)
+// console.log(b.x)
+
+
+
+// var length = 10
+// var obj1 = {
+//   length: 6,
+//   method () {
+//     console.log(this.length)
+//   }
+// }
+
+// var obj2 = {
+//   length: 3,
+
+//   method (fn) {
+//     fn()
+//     arguments[0]()
+//   }
+// }
+
+// obj2.method(obj1.method, obj2.method)
+
+
+// function downloadIamge(selector, name) {
+//   var image = new Image()
+//   // 解决跨域 Canvas 污染问题
+//   image.setAttribute('crossOrigin', 'anonymous')
+//   image.onload = function () {
+//       var canvas = document.createElement('canvas')
+//       canvas.width = image.width
+//       canvas.height = image.height
+
+//       var context = canvas.getContext('2d')
+//       context.drawImage(image, 0, 0, image.width, image.height)
+//       var url = canvas.toDataURL('image/png')
+
+//       // 生成一个a元素
+//       var a = document.createElement('a')
+//       // 创建一个单击事件
+//       var event = new MouseEvent('click')
+
+//       // 将a的download属性设置为我们想要下载的图片名称，若name不存在则使用‘下载图片名称’作为默认名称
+//       a.download = name || '下载图片名称'
+//       // 将生成的URL设置为a.href属性
+//       a.href = url
+
+//       // 触发a的单击事件
+//       a.dispatchEvent(event)
+//   }
+
+//   image.src = url
+// }
+
+// // 调用方式
+// // 参数一： url
+// // 参数二： 图片名称，可选
+// const url = 'https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fa0.att.hudong.com%2F30%2F29%2F01300000201438121627296084016.jpg&refer=http%3A%2F%2Fa0.att.hudong.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1618190779&t=27e4535c23271d40472b430ee6aaea95'
+// downloadIamge(url, 'xxxx')
+
+
+
+</script>
+</body>
+</html>
+
